@@ -1,0 +1,228 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+#homeBtn {
+    color: black;
+}
+
+#homeBtnDark {
+    color: white;
+}
+
+#home {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;  /* Rdeča barva za 'Off' */
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+#homeDark {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;  /* Rdeča barva za 'Off' */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+#homeDark:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+#home:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Celotna višina okna */
+}
+
+#container{
+    border: solid;
+    border-radius: 30px;
+    width: 200px; /* Fiksna širina */
+    height: 300px; /* Fiksna višina */
+    padding: 20px;
+    background-color:gray;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center ;
+}
+
+#containerDark{
+    border: solid;
+    border-radius: 30px;
+    width: 200px; /* Fiksna širina */
+    height: 300px; /* Fiksna višina */
+    padding: 20px;
+    background-color:gray;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center ;
+}
+
+.button:hover {
+    background-color: rgba(218, 218, 218, 0.5)  ;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap; /* Gumbi se "ovijejo", če ni več prostora v vrstici */
+    gap: 2px; /* Razmik med gumbi */
+}
+
+#keyboard button {
+    flex: 1 1 calc(25% - 10px); /* Vsak gumb zavzame 25% širine z razmikom */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+}
+
+#DisplayInput {
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border-style: none;
+    text-align: right;
+}
+
+.orange {
+    background-color: rgb(255, 115, 0);
+}
+
+.orange:hover {
+    background-color: rgba(255, 115, 0, 0.5)  ;
+}
+
+#toggleButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;  /* Rdeča barva za 'Off' */
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+}
+
+#toggleButtonDark {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;  /* Rdeča barva za 'Off' */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+}
+
+#toggleButtonDark:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+#toggleButton:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+#toggleButton.on {
+    background-color: #4CAF50;  /* Zelena barva za 'On' */
+}
+
+#switch {
+    margin-top: 30px;
+}
+
+
+.dark {
+    background-color: black;
+}
+
+#toggleButton.on {
+    background-color: #4CAF50;  /* Zelena barva za 'On' */
+}
+
+
+.theme-checkbox {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 5em;
+    height: 2.5em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+.theme-checkbox::before {
+    content: "";
+    width: 1.8em;
+    height: 1.8em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4;
+}
+
+.theme-checkbox:checked::before {
+    left: calc(100% - 1.8em - 0.438em);
+    background-position: 0;
+}
+
+.theme-checkbox:checked {
+    background-position: 100%;
+}
